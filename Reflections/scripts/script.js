@@ -6,11 +6,17 @@ const Diagnostics = require('Diagnostics');
 
 (async function() {
     // Objekte in der Szene finden
-    const mainSphere = await Scene.root.findFirst('MainSphere');
-    const smallSphere1 = await Scene.root.findFirst('SmallSphere1');
-    const smallSphere2 = await Scene.root.findFirst('SmallSphere2');
-    const text1 = await Scene.root.findFirst('Text1'); // Für Luftqualität
-    const text2 = await Scene.root.findFirst('Text2'); // Für Temperatur
+
+    const planeTracker = await Scene.root.findFirst('PlaneTracker');
+
+    // Kinder von Planetracker
+    const mainSphere = await planeTracker.findFirst('MainSphere');
+    const smallSphere1 = await planeTracker.findFirst('SmallSphere1');
+    const smallSphere2 = await planeTracker.findFirst('SmallSphere2');
+
+    // Kinder von Sphären
+    const text1 = await smallSphere1.findFirst('Text1'); // Für Luftqualität
+    const text2 = await smallSphere2.findFirst('Text2'); // Für Temperatur
 
     // Opacity initialisieren
     mainSphere.material.opacity = 1.0;
