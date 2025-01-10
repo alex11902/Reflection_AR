@@ -1,13 +1,13 @@
 {
   "id": "2672028f188944324b9ab63544b28321d230",
-  "revision": "2868028f188944324b9ab63544b28321d230",
+  "revision": "700567805b22b7b34f6ba661971d951eadea",
   "version": {
     "dev": 0,
     "patch": 0,
     "prod": 187
   },
   "creatorIdentifier": "com.facebook.arstudio.skylight",
-  "creatorPlatform": "windows",
+  "creatorPlatform": "macosx",
   "creatorFileVersion": {
     "dev": 0,
     "patch": 0,

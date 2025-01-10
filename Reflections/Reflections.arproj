@@ -3,14 +3,14 @@
   "name": "Effect",
   "identifier": "document:2674-028f1889-4432-4b9a-b635-44b28321d230",
   "id": "2672028f188944324b9ab63544b28321d230",
-  "revision": "2868028f188944324b9ab63544b28321d230",
+  "revision": "700567805b22b7b34f6ba661971d951eadea",
   "version": {
     "dev": 0,
     "patch": 0,
     "prod": 187
   },
   "creatorIdentifier": "com.facebook.arstudio.skylight",
-  "creatorPlatform": "windows",
+  "creatorPlatform": "macosx",
   "creatorFileVersion": {
     "dev": 0,
     "patch": 0,
@@ -25,7 +25,8 @@
       "identifier": "assets_config_model:2865-028f1889-4432-4b9a-b635-44b28321d230",
       "categoriesOrder": [
         "textures",
-        "scripts"
+        "scripts",
+        "materials"
       ]
     }
   ],
@@ -65,6 +66,15 @@
       "children": [
         {
           "sectionFileLocation": "objects/HiresSphere/HiresSphere_mat.material"
+        },
+        {
+          "sectionFileLocation": "materials/MainSphere.material"
+        },
+        {
+          "sectionFileLocation": "materials/SmallSphere1Mat.material"
+        },
+        {
+          "sectionFileLocation": "materials/SmallSphere2Mat.material"
         }
       ]
     },
@@ -149,7 +159,7 @@
           "modelName": "script",
           "name": "script0",
           "identifier": "script:5918-028f1889-4432-4b9a-b635-44b28321d230",
-          "assetDataHash": "3fceba1ee826be25045036212f5af76f",
+          "assetDataHash": "164fb9f300d133f7f7cfa7226e66957b",
           "assetLocator": "scripts/script.js",
           "isExternalAsset": true
         }
@@ -162,6 +172,7 @@
     {
       "modelName": "exportConfig",
       "identifier": "exportConfig:2718-028f1889-4432-4b9a-b635-44b28321d230",
+      "globalSmartQuality": 52,
       "children": [
         {
           "modelName": "textureExportConfig",
@@ -300,7 +311,7 @@
       "effectUsesDepthData": false,
       "effectUsesDepthShaderRead": false,
       "effectUsesDeviceMotion": false,
-      "effectUsesDiagnosticsScriptingModule": false,
+      "effectUsesDiagnosticsScriptingModule": true,
       "effectUsesDirectionalLightEstimation": false,
       "effectUsesDspAudioAnalyzer": false,
       "effectUsesDspBitCrusher": false,
@@ -344,7 +355,7 @@
       "effectUsesFacialGestureRecognition": false,
       "effectUsesFieldOfView": false,
       "effectUsesFingerTracking": false,
-      "effectUsesFonts": false,
+      "effectUsesFonts": true,
       "effectUsesFormFactor": false,
       "effectUsesFrameBrightness": false,
       "effectUsesGalleryPicker": false,
@@ -356,8 +367,8 @@
       "effectUsesGraphQL": false,
       "effectUsesHairSegmentation": false,
       "effectUsesHalfFloatRenderPass": false,
-      "effectUsesHandGestureKeypoints": true,
-      "effectUsesHandTracker": true,
+      "effectUsesHandGestureKeypoints": false,
+      "effectUsesHandTracker": false,
       "effectUsesHapticFeedback": false,
       "effectUsesHeadsetInfo": false,
       "effectUsesHmdNetworkingAPI": false,
@@ -366,7 +377,7 @@
       "effectUsesImageAntiAliasing": false,
       "effectUsesImageAssets": false,
       "effectUsesImageBasedLighting": true,
-      "effectUsesInstruction": true,
+      "effectUsesInstruction": false,
       "effectUsesIntent": false,
       "effectUsesInterEffectLinking": false,
       "effectUsesInternalScriptingAPI": false,
@@ -375,7 +386,7 @@
       "effectUsesJavaScriptRuntimeForPatches": false,
       "effectUsesJavaScriptScripting": true,
       "effectUsesJavaScriptShaders": false,
-      "effectUsesJavascriptToPatchesBridging": false,
+      "effectUsesJavascriptToPatchesBridging": true,
       "effectUsesLayers": false,
       "effectUsesLocale": false,
       "effectUsesLocation": false,
@@ -468,7 +479,7 @@
       "effectUsesSyncDomApis": true,
       "effectUsesTextAssets": false,
       "effectUsesTextCaptions": false,
-      "effectUsesTextExtrusion": false,
+      "effectUsesTextExtrusion": true,
       "effectUsesTexturesScriptingModule": false,
       "effectUsesTimeScriptingModule": false,
       "effectUsesToasterTracking": false,
@@ -525,7 +536,9 @@
       "internalScriptingAPIEventStream": false,
       "internalScriptingAPIExperimentalCameraInfo": false,
       "internalScriptingAPIGlobalTransform": false,
-      "manuallyEnabledItemsIds": [],
+      "manuallyEnabledItemsIds": [
+        "effectUsesTextExtrusion"
+      ],
       "maxParticipantsCount": 0,
       "multiclassSegmentationMinVersion": 3004,
       "objectTrackerMaxObjects": 1,
@@ -606,6 +619,20 @@
     {
       "modelName": "input_mappings_model",
       "identifier": "input_mappings_model:2859-028f1889-4432-4b9a-b635-44b28321d230"
+    },
+    {
+      "modelName": "fonts",
+      "identifier": "fonts:4323-67805b22-b7b3-4f6b-a661-971d951eadea",
+      "children": [
+        {
+          "modelName": "local_font_model",
+          "name": "Facebook Sans Bold",
+          "identifier": "local_font_model:6084-67805b22-b7b3-4f6b-a661-971d951eadea",
+          "assetLocator": "6085-67805b22-b7b3-4f6b-a661-971d951eadea",
+          "fontIdentity": "com.facebook.editor.fonts.facebooksans-bold",
+          "isExternalAsset": false
+        }
+      ]
     }
   ]
 }
