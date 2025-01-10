@@ -16,6 +16,7 @@ const Diagnostics = require('Diagnostics');
     mainSphere.material.opacity = 1.0;
     smallSphere1.hidden = true;
     smallSphere2.hidden = true;
+    
 
     // Funktion zum Abrufen der Wetterdaten über den Proxy
     async function fetchWeatherData() {
