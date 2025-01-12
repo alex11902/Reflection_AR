@@ -4,6 +4,7 @@ const TouchGestures = require('TouchGestures');
 const Networking = require('Networking');
 const Diagnostics = require('Diagnostics');
 
+
 (async function() {
     // Find objects in the scene
     const planeTracker = await Scene.root.findFirst('PlaneTracker');
