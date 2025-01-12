@@ -216,7 +216,7 @@
     },
     {
       "modelName": "plane_tracker_model",
-      "name": "planeTracker0",
+      "name": "PlaneTracker",
       "identifier": "plane_tracker_model:4089-028f1889-4432-4b9a-b635-44b28321d230",
       "animationMask": {
         "position": false,
@@ -269,14 +269,14 @@
           "tags": [],
           "transform": {
             "rx": 0,
-            "ry": 0,
+            "ry": -0,
             "rz": 0,
             "sx": 8,
             "sy": 8,
             "sz": 8,
             "x": 0.000009894371032714844,
-            "y": 0.4875340461730957,
-            "z": -2.384185791015625E-7
+            "y": 0.48756587505340576,
+            "z": -0.5012253522872925
           },
           "width": 0.050000011920928955,
           "children": [
@@ -327,7 +327,7 @@
                       "identifier": "surface:4700-028f1889-4432-4b9a-b635-44b28321d230",
                       "sourceIdentifier": "surface:3593-028f1889-4432-4b9a-b635-44b28321d230",
                       "isMaterialIdentifierEnabled": true,
-                      "materialIdentifier": "defaultMaterial:3939-67805b22-b7b3-4f6b-a661-971d951eadea",
+                      "materialIdentifier": "defaultMaterial:34965-67805b22-b7b3-4f6b-a661-971d951eadea",
                       "surfaceGroupIdentifier": "3594-028f1889-4432-4b9a-b635-44b28321d230"
                     }
                   ]
@@ -486,14 +486,14 @@
           "tags": [],
           "transform": {
             "rx": 0,
-            "ry": 0,
+            "ry": -0,
             "rz": 0,
             "sx": 5,
             "sy": 5,
             "sz": 5,
             "x": -0.6578344106674194,
-            "y": 0.48623043298721313,
-            "z": 2.384185791015625E-7
+            "y": 0.4862622618675232,
+            "z": -0.5012248754501343
           },
           "width": 0.050000011920928955,
           "children": [
@@ -703,14 +703,14 @@
           "tags": [],
           "transform": {
             "rx": 0,
-            "ry": 0,
+            "ry": -0,
             "rz": 0,
             "sx": 5,
             "sy": 5,
             "sz": 5,
             "x": 0.6795024871826172,
-            "y": 0.49456435441970825,
-            "z": 1.1920928955078125E-7
+            "y": 0.4945961833000183,
+            "z": -0.5012248754501343
           },
           "width": 0.050000011920928955,
           "children": [

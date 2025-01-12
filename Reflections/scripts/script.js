@@ -60,7 +60,7 @@ const Diagnostics = require('Diagnostics');
 
     // Tapping auf MainSphere
     TouchGestures.onTap(mainSphere).subscribe(async () => {
-        mainSphere.material.opacity = 0.5; // Opacity reduzieren
+        mainSphere.material.visiblity = 0.5; // Opacity reduzieren
         smallSphere1.hidden = false; // Kleine Sphären anzeigen
         smallSphere2.hidden = false;
 

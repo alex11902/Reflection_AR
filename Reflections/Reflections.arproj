@@ -3,7 +3,7 @@
   "name": "Effect",
   "identifier": "document:2674-028f1889-4432-4b9a-b635-44b28321d230",
   "id": "2672028f188944324b9ab63544b28321d230",
-  "revision": "700567805b22b7b34f6ba661971d951eadea",
+  "revision": "3780367805b22b7b34f6ba661971d951eadea",
   "version": {
     "dev": 0,
     "patch": 0,
@@ -33,7 +33,12 @@
   "projectFormatType": "separated_files",
   "usingPatchesV2": true,
   "visual_programming": {
-    "sectionFileLocation": "Reflections.patches"
+    "graphs": [
+      {
+        "modelName": "patch_graph",
+        "identifier": "patch_graph:2760-028f1889-4432-4b9a-b635-44b28321d230"
+      }
+    ]
   },
   "children": [
     {
@@ -68,7 +73,7 @@
           "sectionFileLocation": "objects/HiresSphere/HiresSphere_mat.material"
         },
         {
-          "sectionFileLocation": "materials/MainSphere.material"
+          "sectionFileLocation": "materials/MainSphere-2.material"
         },
         {
           "sectionFileLocation": "materials/SmallSphere1Mat.material"
@@ -159,7 +164,7 @@
           "modelName": "script",
           "name": "script0",
           "identifier": "script:5918-028f1889-4432-4b9a-b635-44b28321d230",
-          "assetDataHash": "164fb9f300d133f7f7cfa7226e66957b",
+          "assetDataHash": "77131bc891cde8b38e70f6d1e9511922",
           "assetLocator": "scripts/script.js",
           "isExternalAsset": true
         }
@@ -294,7 +299,7 @@
       "effectUsesCameraControl": false,
       "effectUsesCameraInfoScriptingModule": false,
       "effectUsesCameraShare": false,
-      "effectUsesComponentEvaluation": true,
+      "effectUsesComponentEvaluation": false,
       "effectUsesComposedLocally": false,
       "effectUsesComposedMaterial": false,
       "effectUsesControllers": false,
@@ -561,7 +566,7 @@
       "touchGesturesSupportsPinch": false,
       "touchGesturesSupportsRawTouch": false,
       "touchGesturesSupportsRotate": false,
-      "touchGesturesSupportsTap": true,
+      "touchGesturesSupportsTap": false,
       "whitelistedDomains": null,
       "witAppId": null,
       "witClientToken": null,

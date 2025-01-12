@@ -1,10 +1,10 @@
 {
   "modelName": "defaultMaterial",
   "name": "MainSphere",
-  "identifier": "defaultMaterial:3939-67805b22-b7b3-4f6b-a661-971d951eadea",
+  "identifier": "defaultMaterial:34965-67805b22-b7b3-4f6b-a661-971d951eadea",
   "alphaTestEnabled": false,
   "alphaTestThreshold": 0,
-  "blendMode": "alpha",
+  "blendMode": "associative_alpha",
   "colorEncoding": "linear",
   "cullMode": "back",
   "diffuseFactor": "0xff009192",
@@ -66,7 +66,7 @@
     "scaleU": 1,
     "scaleV": 1
   },
-  "transparency": 0.8079190340909083,
+  "transparency": 1,
   "writeDepth": true,
   "writesToColorBufferAlpha": true,
   "writesToColorBufferBlue": true,
