@@ -47,21 +47,100 @@
       "defaultEnvironmentTexture": "environment_texture_model:3629-028f1889-4432-4b9a-b635-44b28321d230",
       "children": [
         {
-          "sectionFileLocation": "textures/DiffuseEnvironment.texture"
+          "modelName": "texture",
+          "name": "office_diffuse",
+          "identifier": "texture:3602-028f1889-4432-4b9a-b635-44b28321d230",
+          "alphaPremultiplicationMode": "none",
+          "assetLocator": "3603-028f1889-4432-4b9a-b635-44b28321d230.png",
+          "colorEncoding": "rgbd",
+          "coordMapping": "equirectangular",
+          "exportConfigurations": [
+            "textureExportConfig:3605-028f1889-4432-4b9a-b635-44b28321d230",
+            "textureExportConfig:3607-028f1889-4432-4b9a-b635-44b28321d230",
+            "textureExportConfig:3609-028f1889-4432-4b9a-b635-44b28321d230"
+          ],
+          "fileLocator": {
+            "path": "textures/DiffuseEnvironment.texture"
+          },
+          "height": 32,
+          "isExternalAsset": false,
+          "uWrapMode": "repeat",
+          "width": 64,
+          "children": [
+            {
+              "modelName": "data_texture_metadata_model",
+              "assetDataHash": "87798819e923aa7a1df352c412d6cf13",
+              "colorCount": 759,
+              "detectedAlphaChannel": "no_alpha",
+              "detectedOriginalFormat": "png",
+              "entropyOfDistribution": 9.103762231252079,
+              "pixelsHigh": 32,
+              "pixelsWide": 64
+            }
+          ]
         },
         {
-          "sectionFileLocation": "textures/PreviewEnvironment.texture"
+          "modelName": "texture",
+          "name": "office_preview",
+          "identifier": "texture:3611-028f1889-4432-4b9a-b635-44b28321d230",
+          "alphaPremultiplicationMode": "none",
+          "assetLocator": "3612-028f1889-4432-4b9a-b635-44b28321d230.png",
+          "coordMapping": "equirectangular",
+          "excludeDuringExport": true,
+          "exportConfigurations": [
+            "textureExportConfig:3614-028f1889-4432-4b9a-b635-44b28321d230",
+            "textureExportConfig:3616-028f1889-4432-4b9a-b635-44b28321d230",
+            "textureExportConfig:3618-028f1889-4432-4b9a-b635-44b28321d230"
+          ],
+          "fileLocator": {
+            "path": "textures/PreviewEnvironment.texture"
+          },
+          "height": 256,
+          "isExternalAsset": false,
+          "uWrapMode": "repeat",
+          "width": 512
         },
         {
-          "sectionFileLocation": "textures/SpecularEnvironment.texture"
+          "modelName": "texture",
+          "name": "office_specular",
+          "identifier": "texture:3620-028f1889-4432-4b9a-b635-44b28321d230",
+          "alphaPremultiplicationMode": "none",
+          "assetLocator": "3621-028f1889-4432-4b9a-b635-44b28321d230.png",
+          "colorEncoding": "rgbd",
+          "coordMapping": "equirectangular",
+          "exportConfigurations": [
+            "textureExportConfig:3623-028f1889-4432-4b9a-b635-44b28321d230",
+            "textureExportConfig:3625-028f1889-4432-4b9a-b635-44b28321d230",
+            "textureExportConfig:3627-028f1889-4432-4b9a-b635-44b28321d230"
+          ],
+          "fileLocator": {
+            "path": "textures/SpecularEnvironment.texture"
+          },
+          "filter": "trilinear",
+          "height": 256,
+          "isExternalAsset": false,
+          "uWrapMode": "repeat",
+          "width": 512,
+          "children": [
+            {
+              "modelName": "data_texture_metadata_model",
+              "assetDataHash": "d0ad2eb085ec23eaae4044c7d47a2ad4",
+              "colorCount": 44059,
+              "detectedAlphaChannel": "eight_bit_full_range",
+              "detectedOriginalFormat": "png",
+              "entropyOfDistribution": 14.411108935529345,
+              "pixelsHigh": 256,
+              "pixelsWide": 512
+            }
+          ]
         },
         {
           "modelName": "environment_texture_model",
           "name": "Default environment texture",
           "identifier": "environment_texture_model:3629-028f1889-4432-4b9a-b635-44b28321d230",
-          "diffuseEnvironmentTextureIdentifier": "textures/DiffuseEnvironment.texture",
-          "previewEnvironmentTextureIdentifier": "textures/PreviewEnvironment.texture",
-          "specularEnvironmentTextureIdentifier": "textures/SpecularEnvironment.texture"
+          "diffuseEnvironmentTextureIdentifier": "texture:3602-028f1889-4432-4b9a-b635-44b28321d230",
+          "previewEnvironmentTextureIdentifier": "texture:3611-028f1889-4432-4b9a-b635-44b28321d230",
+          "specularEnvironmentTextureIdentifier": "texture:3620-028f1889-4432-4b9a-b635-44b28321d230"
         }
       ]
     },
@@ -70,16 +149,47 @@
       "identifier": "materials:2682-028f1889-4432-4b9a-b635-44b28321d230",
       "children": [
         {
-          "sectionFileLocation": "objects/HiresSphere/HiresSphere_mat.material"
+          "modelName": "dependent_metallic_roughness_p_b_r_material_model",
+          "name": "HiresSphere_mat",
+          "identifier": "dependent_metallic_roughness_p_b_r_material_model:3584-028f1889-4432-4b9a-b635-44b28321d230",
+          "sourceIdentifier": "asset_collection_model:3600-028f1889-4432-4b9a-b635-44b28321d230",
+          "environmentEnabled": true,
+          "environmentTextureName": "environment_texture_model:3629-028f1889-4432-4b9a-b635-44b28321d230",
+          "fileLocator": {
+            "path": "objects/HiresSphere/HiresSphere_mat.material"
+          },
+          "metallicFactor": 0.10000000149011612,
+          "roughnessFactor": 0.5,
+          "vertexColorEnabled": true
         },
         {
-          "sectionFileLocation": "materials/MainSphere-2.material"
+          "modelName": "defaultMaterial",
+          "name": "MainSphere",
+          "identifier": "defaultMaterial:34965-67805b22-b7b3-4f6b-a661-971d951eadea",
+          "blendMode": "associative_alpha",
+          "diffuseFactor": "0xff009192",
+          "fileLocator": {
+            "path": "materials/MainSphere-2.material"
+          },
+          "lightingEnabled": true
         },
         {
-          "sectionFileLocation": "materials/SmallSphere1Mat.material"
+          "modelName": "defaultMaterial",
+          "name": "SmallSphere1Mat",
+          "identifier": "defaultMaterial:6082-67805b22-b7b3-4f6b-a661-971d951eadea",
+          "fileLocator": {
+            "path": "materials/SmallSphere1Mat.material"
+          },
+          "lightingEnabled": true
         },
         {
-          "sectionFileLocation": "materials/SmallSphere2Mat.material"
+          "modelName": "defaultMaterial",
+          "name": "SmallSphere2Mat",
+          "identifier": "defaultMaterial:7215-67805b22-b7b3-4f6b-a661-971d951eadea",
+          "fileLocator": {
+            "path": "materials/SmallSphere2Mat.material"
+          },
+          "lightingEnabled": true
         }
       ]
     },
@@ -102,12 +212,404 @@
       "identifier": "3_d_objects_model:2686-028f1889-4432-4b9a-b635-44b28321d230",
       "children": [
         {
-          "sectionFileLocation": "objects/HiresSphere/HiresSphere.object"
+          "modelName": "master3_d_object_model",
+          "name": "HiresSphere",
+          "identifier": "master3_d_object_model:3596-028f1889-4432-4b9a-b635-44b28321d230",
+          "sourceIdentifier": "asset_collection_model:3600-028f1889-4432-4b9a-b635-44b28321d230",
+          "depth": 0.04972612112760544,
+          "fileLocator": {
+            "path": "objects/HiresSphere/HiresSphere.object"
+          },
+          "height": 0.04999999701976776,
+          "layerIdentifier": "layer0",
+          "width": 0.050000011920928955,
+          "children": [
+            {
+              "modelName": "mesh",
+              "name": "HiresSphere",
+              "identifier": "mesh:3586-028f1889-4432-4b9a-b635-44b28321d230",
+              "layerIdentifier": "layer0",
+              "nodeName": "HiresSphere",
+              "numberOfFaces": 1740,
+              "prefabIdentifier": "gltf:3590-028f1889-4432-4b9a-b635-44b28321d230",
+              "children": [
+                {
+                  "modelName": "surfaces",
+                  "identifier": "surfaces:3588-028f1889-4432-4b9a-b635-44b28321d230",
+                  "children": [
+                    {
+                      "modelName": "surface",
+                      "name": "surface0",
+                      "identifier": "surface:3593-028f1889-4432-4b9a-b635-44b28321d230",
+                      "materialIdentifier": "dependent_metallic_roughness_p_b_r_material_model:3584-028f1889-4432-4b9a-b635-44b28321d230",
+                      "surfaceGroupIdentifier": "3594-028f1889-4432-4b9a-b635-44b28321d230"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
-      "sectionFileLocation": "Reflections.scene"
+      "modelName": "scene",
+      "identifier": "scene:2688-028f1889-4432-4b9a-b635-44b28321d230",
+      "fileLocator": {
+        "path": "Reflections.scene"
+      },
+      "children": [
+        {
+          "modelName": "device",
+          "name": "Device",
+          "identifier": "device:2744-028f1889-4432-4b9a-b635-44b28321d230",
+          "layerIdentifier": "layer0",
+          "children": [
+            {
+              "modelName": "camera",
+              "name": "Camera",
+              "identifier": "camera:2746-028f1889-4432-4b9a-b635-44b28321d230",
+              "layerIdentifier": "layer0",
+              "updateSource": "world_tracker",
+              "children": [
+                {
+                  "modelName": "focalDistance",
+                  "name": "Focal Distance",
+                  "identifier": "focalDistance:2748-028f1889-4432-4b9a-b635-44b28321d230",
+                  "layerIdentifier": "layer0",
+                  "transform": {
+                    "rx": 0,
+                    "ry": 0,
+                    "rz": 0,
+                    "sx": 1,
+                    "sy": 1,
+                    "sz": 1,
+                    "x": 0,
+                    "y": 0,
+                    "z": -0.5361266732215881
+                  },
+                  "children": [
+                    {
+                      "modelName": "ambient_light_source_model",
+                      "name": "ambientLight0",
+                      "identifier": "ambient_light_source_model:2754-028f1889-4432-4b9a-b635-44b28321d230",
+                      "layerIdentifier": "layer0"
+                    },
+                    {
+                      "modelName": "directional_light_source_model",
+                      "name": "directionalLight0",
+                      "identifier": "directional_light_source_model:2756-028f1889-4432-4b9a-b635-44b28321d230",
+                      "intensity": 0.800000011920929,
+                      "layerIdentifier": "layer0",
+                      "transform": {
+                        "rx": -0.7853981633974483,
+                        "ry": 0.08726646259971647,
+                        "rz": 0,
+                        "sx": 1,
+                        "sy": 1,
+                        "sz": 1,
+                        "x": 0.03,
+                        "y": 0.25,
+                        "z": 0.3
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "modelName": "microphone_model",
+              "name": "Microphone",
+              "identifier": "microphone_model:2750-028f1889-4432-4b9a-b635-44b28321d230",
+              "layerIdentifier": "layer0"
+            }
+          ]
+        },
+        {
+          "modelName": "plane_tracker_model",
+          "name": "PlaneTracker",
+          "identifier": "plane_tracker_model:4089-028f1889-4432-4b9a-b635-44b28321d230",
+          "cameraVisibility": "back",
+          "layerIdentifier": "layer0",
+          "children": [
+            {
+              "modelName": "3_d_object_instance_model",
+              "name": "MainSphere",
+              "identifier": "master3_d_object_model:4685-028f1889-4432-4b9a-b635-44b28321d230",
+              "sourceIdentifier": "master3_d_object_model:3596-028f1889-4432-4b9a-b635-44b28321d230",
+              "depth": 0.04972612112760544,
+              "height": 0.04999999701976776,
+              "layerIdentifier": "layer0",
+              "transform": {
+                "rx": 0,
+                "ry": 0,
+                "rz": 0,
+                "sx": 8,
+                "sy": 8,
+                "sz": 8,
+                "x": 0.000009894371032714844,
+                "y": 0.48756587505340576,
+                "z": -0.5012253522872925
+              },
+              "width": 0.050000011920928955,
+              "children": [
+                {
+                  "modelName": "mesh",
+                  "name": "HiresSphere",
+                  "identifier": "mesh:4694-028f1889-4432-4b9a-b635-44b28321d230",
+                  "sourceIdentifier": "mesh:3586-028f1889-4432-4b9a-b635-44b28321d230",
+                  "layerIdentifier": "layer0",
+                  "nodeName": "HiresSphere",
+                  "numberOfFaces": 1740,
+                  "prefabIdentifier": "gltf:3590-028f1889-4432-4b9a-b635-44b28321d230",
+                  "children": [
+                    {
+                      "modelName": "surfaces",
+                      "identifier": "surfaces:4697-028f1889-4432-4b9a-b635-44b28321d230",
+                      "sourceIdentifier": "surfaces:3588-028f1889-4432-4b9a-b635-44b28321d230",
+                      "children": [
+                        {
+                          "modelName": "surface",
+                          "name": "surface0",
+                          "identifier": "surface:4700-028f1889-4432-4b9a-b635-44b28321d230",
+                          "sourceIdentifier": "surface:3593-028f1889-4432-4b9a-b635-44b28321d230",
+                          "materialIdentifier": "defaultMaterial:34965-67805b22-b7b3-4f6b-a661-971d951eadea",
+                          "surfaceGroupIdentifier": "3594-028f1889-4432-4b9a-b635-44b28321d230"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "modelName": "text_extrusion_model",
+                  "name": "Text3",
+                  "identifier": "text_extrusion_model:8401-67805b22-b7b3-4f6b-a661-971d951eadea",
+                  "fontIdentifier": "local_font_model:6084-67805b22-b7b3-4f6b-a661-971d951eadea",
+                  "layerIdentifier": "layer0",
+                  "transform": {
+                    "rx": 0,
+                    "ry": 0,
+                    "rz": 0,
+                    "sx": 0.00023453193716704845,
+                    "sy": 0.00023453193716704845,
+                    "sz": 0.00023453193716704845,
+                    "x": -0.009089221246540546,
+                    "y": 0.0068535953760147095,
+                    "z": 0.027938902378082275
+                  },
+                  "children": [
+                    {
+                      "modelName": "text_extrusion_front_model",
+                      "identifier": "text_extrusion_front_model:8403-67805b22-b7b3-4f6b-a661-971d951eadea",
+                      "layerIdentifier": "layer0",
+                      "materialIdentifier": "defaultMaterial:6082-67805b22-b7b3-4f6b-a661-971d951eadea"
+                    },
+                    {
+                      "modelName": "text_extrusion_back_model",
+                      "identifier": "text_extrusion_back_model:8409-67805b22-b7b3-4f6b-a661-971d951eadea",
+                      "layerIdentifier": "layer0",
+                      "materialIdentifier": "defaultMaterial:6082-67805b22-b7b3-4f6b-a661-971d951eadea"
+                    },
+                    {
+                      "modelName": "text_extrusion_side_model",
+                      "identifier": "text_extrusion_side_model:8411-67805b22-b7b3-4f6b-a661-971d951eadea",
+                      "layerIdentifier": "layer0",
+                      "materialIdentifier": "defaultMaterial:6082-67805b22-b7b3-4f6b-a661-971d951eadea"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "modelName": "3_d_object_instance_model",
+              "name": "SmallSphere2",
+              "identifier": "master3_d_object_model:5158-028f1889-4432-4b9a-b635-44b28321d230",
+              "sourceIdentifier": "master3_d_object_model:3596-028f1889-4432-4b9a-b635-44b28321d230",
+              "depth": 0.04972612112760544,
+              "height": 0.04999999701976776,
+              "layerIdentifier": "layer0",
+              "transform": {
+                "rx": 0,
+                "ry": 0,
+                "rz": 0,
+                "sx": 5,
+                "sy": 5,
+                "sz": 5,
+                "x": -0.6578344106674194,
+                "y": 0.4862622618675232,
+                "z": -0.5012248754501343
+              },
+              "width": 0.050000011920928955,
+              "children": [
+                {
+                  "modelName": "mesh",
+                  "name": "HiresSphere",
+                  "identifier": "mesh:5167-028f1889-4432-4b9a-b635-44b28321d230",
+                  "sourceIdentifier": "mesh:3586-028f1889-4432-4b9a-b635-44b28321d230",
+                  "layerIdentifier": "layer0",
+                  "nodeName": "HiresSphere",
+                  "numberOfFaces": 1740,
+                  "prefabIdentifier": "gltf:3590-028f1889-4432-4b9a-b635-44b28321d230",
+                  "children": [
+                    {
+                      "modelName": "surfaces",
+                      "identifier": "surfaces:5170-028f1889-4432-4b9a-b635-44b28321d230",
+                      "sourceIdentifier": "surfaces:3588-028f1889-4432-4b9a-b635-44b28321d230",
+                      "children": [
+                        {
+                          "modelName": "surface",
+                          "name": "surface0",
+                          "identifier": "surface:5173-028f1889-4432-4b9a-b635-44b28321d230",
+                          "sourceIdentifier": "surface:3593-028f1889-4432-4b9a-b635-44b28321d230",
+                          "materialIdentifier": "defaultMaterial:7215-67805b22-b7b3-4f6b-a661-971d951eadea",
+                          "surfaceGroupIdentifier": "3594-028f1889-4432-4b9a-b635-44b28321d230"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "modelName": "text_extrusion_model",
+                  "name": "Text2",
+                  "identifier": "text_extrusion_model:6502-67805b22-b7b3-4f6b-a661-971d951eadea",
+                  "fontIdentifier": "local_font_model:6084-67805b22-b7b3-4f6b-a661-971d951eadea",
+                  "layerIdentifier": "layer0",
+                  "transform": {
+                    "rx": 0,
+                    "ry": 0,
+                    "rz": 0,
+                    "sx": 0.0002500000118743628,
+                    "sy": 0.0002500000118743628,
+                    "sz": 0.0002500000118743628,
+                    "x": -0.009229999966919422,
+                    "y": 0.007899999618530273,
+                    "z": 0.03238999843597412
+                  },
+                  "children": [
+                    {
+                      "modelName": "text_extrusion_front_model",
+                      "identifier": "text_extrusion_front_model:6514-67805b22-b7b3-4f6b-a661-971d951eadea",
+                      "layerIdentifier": "layer0",
+                      "materialIdentifier": "defaultMaterial:6082-67805b22-b7b3-4f6b-a661-971d951eadea"
+                    },
+                    {
+                      "modelName": "text_extrusion_back_model",
+                      "identifier": "text_extrusion_back_model:6508-67805b22-b7b3-4f6b-a661-971d951eadea",
+                      "layerIdentifier": "layer0",
+                      "materialIdentifier": "defaultMaterial:6082-67805b22-b7b3-4f6b-a661-971d951eadea"
+                    },
+                    {
+                      "modelName": "text_extrusion_side_model",
+                      "identifier": "text_extrusion_side_model:6512-67805b22-b7b3-4f6b-a661-971d951eadea",
+                      "layerIdentifier": "layer0",
+                      "materialIdentifier": "defaultMaterial:6082-67805b22-b7b3-4f6b-a661-971d951eadea"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "modelName": "3_d_object_instance_model",
+              "name": "SmallSphere1",
+              "identifier": "3_d_object_instance_model:4896-028f1889-4432-4b9a-b635-44b28321d230",
+              "sourceIdentifier": "master3_d_object_model:3596-028f1889-4432-4b9a-b635-44b28321d230",
+              "depth": 0.04972612112760544,
+              "height": 0.04999999701976776,
+              "layerIdentifier": "layer0",
+              "transform": {
+                "rx": 0,
+                "ry": 0,
+                "rz": 0,
+                "sx": 5,
+                "sy": 5,
+                "sz": 5,
+                "x": 0.6795024871826172,
+                "y": 0.4945961833000183,
+                "z": -0.5012248754501343
+              },
+              "width": 0.050000011920928955,
+              "children": [
+                {
+                  "modelName": "mesh",
+                  "name": "HiresSphere",
+                  "identifier": "mesh:4900-028f1889-4432-4b9a-b635-44b28321d230",
+                  "sourceIdentifier": "mesh:3586-028f1889-4432-4b9a-b635-44b28321d230",
+                  "layerIdentifier": "layer0",
+                  "nodeName": "HiresSphere",
+                  "numberOfFaces": 1740,
+                  "prefabIdentifier": "gltf:3590-028f1889-4432-4b9a-b635-44b28321d230",
+                  "transform": {
+                    "rx": 0,
+                    "ry": 0,
+                    "rz": 0,
+                    "sx": 1,
+                    "sy": 1,
+                    "sz": 1,
+                    "x": 0,
+                    "y": -8.344650268554688E-7,
+                    "z": 0
+                  },
+                  "children": [
+                    {
+                      "modelName": "surfaces",
+                      "identifier": "surfaces:4906-028f1889-4432-4b9a-b635-44b28321d230",
+                      "sourceIdentifier": "surfaces:3588-028f1889-4432-4b9a-b635-44b28321d230",
+                      "children": [
+                        {
+                          "modelName": "surface",
+                          "name": "surface0",
+                          "identifier": "surface:4898-028f1889-4432-4b9a-b635-44b28321d230",
+                          "sourceIdentifier": "surface:3593-028f1889-4432-4b9a-b635-44b28321d230",
+                          "materialIdentifier": "defaultMaterial:6082-67805b22-b7b3-4f6b-a661-971d951eadea",
+                          "surfaceGroupIdentifier": "3594-028f1889-4432-4b9a-b635-44b28321d230"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "modelName": "text_extrusion_model",
+                  "name": "Text1",
+                  "identifier": "text_extrusion_model:6074-67805b22-b7b3-4f6b-a661-971d951eadea",
+                  "fontIdentifier": "local_font_model:6084-67805b22-b7b3-4f6b-a661-971d951eadea",
+                  "layerIdentifier": "layer0",
+                  "transform": {
+                    "rx": 0,
+                    "ry": 0,
+                    "rz": 0,
+                    "sx": 0.0002500000118743628,
+                    "sy": 0.0002500000118743628,
+                    "sz": 0.0002500000118743628,
+                    "x": -0.009229999966919422,
+                    "y": 0.007899999618530273,
+                    "z": 0.03238999843597412
+                  },
+                  "children": [
+                    {
+                      "modelName": "text_extrusion_front_model",
+                      "identifier": "text_extrusion_front_model:6076-67805b22-b7b3-4f6b-a661-971d951eadea",
+                      "layerIdentifier": "layer0",
+                      "materialIdentifier": "defaultMaterial:6082-67805b22-b7b3-4f6b-a661-971d951eadea"
+                    },
+                    {
+                      "modelName": "text_extrusion_back_model",
+                      "identifier": "text_extrusion_back_model:6078-67805b22-b7b3-4f6b-a661-971d951eadea",
+                      "layerIdentifier": "layer0",
+                      "materialIdentifier": "defaultMaterial:6082-67805b22-b7b3-4f6b-a661-971d951eadea"
+                    },
+                    {
+                      "modelName": "text_extrusion_side_model",
+                      "identifier": "text_extrusion_side_model:6080-67805b22-b7b3-4f6b-a661-971d951eadea",
+                      "layerIdentifier": "layer0",
+                      "materialIdentifier": "defaultMaterial:6082-67805b22-b7b3-4f6b-a661-971d951eadea"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "modelName": "layers",

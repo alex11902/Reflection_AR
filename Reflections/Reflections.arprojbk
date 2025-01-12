@@ -3,7 +3,7 @@
   "name": "Effect",
   "identifier": "document:2674-028f1889-4432-4b9a-b635-44b28321d230",
   "id": "2672028f188944324b9ab63544b28321d230",
-  "revision": "891470b9692bac454f7894b9cfa956373129",
+  "revision": "1302170b9692bac454f7894b9cfa956373129",
   "version": {
     "dev": 0,
     "patch": 0,
@@ -25,8 +25,8 @@
       "identifier": "assets_config_model:2865-028f1889-4432-4b9a-b635-44b28321d230",
       "categoriesOrder": [
         "textures",
-        "scripts",
-        "materials"
+        "materials",
+        "scripts"
       ]
     }
   ],
@@ -665,7 +665,7 @@
         {
           "modelName": "script",
           "name": "script0",
-          "identifier": "script:5918-028f1889-4432-4b9a-b635-44b28321d230",
+          "identifier": "script:11958-70b9692b-ac45-4f78-94b9-cfa956373129",
           "assetDataHash": "76684312da95c0d9e96cfa8ecb445623",
           "assetLocator": "scripts/script.js",
           "isExternalAsset": true
