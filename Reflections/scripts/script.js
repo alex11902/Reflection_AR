@@ -5,52 +5,47 @@ const Networking = require('Networking');
 const Diagnostics = require('Diagnostics');
 
 (async function() {
-    // Objekte in der Szene finden
-
+    // Find objects in the scene
     const planeTracker = await Scene.root.findFirst('PlaneTracker');
-
-    // Kinder von Planetracker
     const mainSphere = await planeTracker.findFirst('MainSphere');
     const smallSphere1 = await planeTracker.findFirst('SmallSphere1');
     const smallSphere2 = await planeTracker.findFirst('SmallSphere2');
 
-    // Kinder von Sphären
-    const text1 = await smallSphere1.findFirst('Text1'); // Für Luftqualität
-    const text2 = await smallSphere2.findFirst('Text2'); // Für Temperatur
+    const text1 = await smallSphere1.findFirst('Text1'); // Air Quality Text
+    const text2 = await smallSphere2.findFirst('Text2'); // Temperature Text
 
-    // Opacity initialisieren
+    // Initialize visibility and opacity
     mainSphere.material.opacity = 1.0;
     smallSphere1.hidden = true;
     smallSphere2.hidden = true;
-    
 
-    // Funktion zum Abrufen der Wetterdaten über den Proxy
+    // Fetch weather data from proxy
     async function fetchWeatherData() {
-        const url = `https://reflection-ar.onrender.com/api/weather`; // Proxy-Endpunkt
+        const url = `https://reflection-ar.onrender.com/api/weather`;
         try {
             const response = await Networking.fetch(url);
-            const temp = await response.json();
-            return temp;
-        } catch (e) {
-            Diagnostics.log(`Fehler beim Abrufen der Wetterdaten: ${e}`);
-            return "Keine Daten";
+            const tempData = await response.json();
+            return tempData.temperature || "N/A"; // Replace with actual response structure
+        } catch (error) {
+            Diagnostics.log(`Weather fetch error: ${error}`);
+            return "Error";
         }
     }
 
-    // Funktion zum Abrufen der Luftqualitätsdaten über den Proxy
+    // Fetch air quality data from proxy
     async function fetchAirQualityData() {
-        const url = `https://reflection-ar.onrender.com/api/air-quality`; // Proxy-Endpunkt
+        const url = `https://reflection-ar.onrender.com/api/air-quality`;
         try {
             const response = await Networking.fetch(url);
-            const aqi = await response.json();
-            return aqi;
-        } catch (e) {
-            Diagnostics.log(`Fehler beim Abrufen der Luftqualitätsdaten: ${e}`);
-            return "Keine Daten";
+            const airQualityData = await response.json();
+            return airQualityData.aqi || "N/A"; // Replace with actual response structure
+        } catch (error) {
+            Diagnostics.log(`Air Quality fetch error: ${error}`);
+            return "Error";
         }
     }
 
-    // Funktion zum Aktualisieren der Texte
+    // Update text data
     async function updateTextData() {
         const temp = await fetchWeatherData();
         const aqi = await fetchAirQualityData();
@@ -58,24 +53,21 @@ const Diagnostics = require('Diagnostics');
         text2.text = `${temp}°C`;
     }
 
-    // Tapping auf MainSphere
+    // Tap gestures
     TouchGestures.onTap(mainSphere).subscribe(async () => {
-        mainSphere.material.visiblity = 0.5; // Opacity reduzieren
-        smallSphere1.hidden = false; // Kleine Sphären anzeigen
+        mainSphere.material.opacity = 0.5; // Reduce opacity
+        smallSphere1.hidden = false; // Show smaller spheres
         smallSphere2.hidden = false;
-
-        await updateTextData(); // Texte aktualisieren
+        await updateTextData(); // Update texts
     });
 
-    // Tapping auf SmallSphere1
     TouchGestures.onTap(smallSphere1).subscribe(() => {
-        mainSphere.material.opacity += 0.25; // Opacity erhöhen
-        smallSphere1.hidden = true; // Sphäre verstecken
+        mainSphere.material.opacity = Math.min(mainSphere.material.opacity + 0.25, 1.0); // Increase opacity
+        smallSphere1.hidden = true; // Hide sphere
     });
 
-    // Tapping auf SmallSphere2
     TouchGestures.onTap(smallSphere2).subscribe(() => {
-        mainSphere.material.opacity += 0.25; // Opacity erhöhen
-        smallSphere2.hidden = true; // Sphäre verstecken
+        mainSphere.material.opacity = Math.min(mainSphere.material.opacity + 0.25, 1.0); // Increase opacity
+        smallSphere2.hidden = true; // Hide sphere
     });
 })();
